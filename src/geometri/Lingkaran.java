@@ -1,13 +1,17 @@
 package geometri;
 
-public class Lingkaran {
-    private double radius;
-    
-    public double luas(){
-        return 3.14*radius*radius;
+class Lingkaran {
+    private final double radius;
+
+    public Lingkaran(double radius) {
+        this.radius = radius;
     }
-    
-    public double keliling(){
-        return 2*3.14*radius;
+
+    public double luas() {
+        return Math.PI * Math.pow(radius, 2);
+    }
+
+    public double keliling() {
+        return 2 * Math.PI * radius;
     }
 }
