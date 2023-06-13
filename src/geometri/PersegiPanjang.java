@@ -11,3 +11,4 @@ public class PersegiPanjang {
         return 2*(panjang+lebar);
     }
 }
+    
